@@ -1,0 +1,5 @@
+BOT_TOKEN = '7453389172:AAFMvvMzL991KXLiJdTZmyq-xpW1ktvCDl4'
+MYSQL_HOST = 'localhost'
+MYSQL_USER = 'root'
+MYSQL_PASSWORD = 'The1**clark'
+MYSQL_DATABASE = 'telegram_db'

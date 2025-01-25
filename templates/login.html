@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Jika menggunakan file eksternal -->
+    <style>
+       /* Reset beberapa style default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Kontainer luar dengan latar belakang ungu */
+.container-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4d0d74, #000000, #ca0505); /* Gradasi 3 warna */
+}
+
+
+/* Container dalam dengan transparan dan garis pinggir putih */
+.container-inner {
+    background-color: rgba(255, 255, 255, 0); /* Transparan 100% */
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid white; /* Garis pinggir putih */
+    width: 300px;
+    text-align: center;
+}
+
+/* Style untuk input */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid white; /* Garis pinggir putih */
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0); /* Transparan 100% */
+    color: white; /* Teks putih */
+    font-size: 14px;
+}
+
+/* Style untuk tombol */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0); /* Transparan 100% */
+    color: white;
+    border: 2px solid white; /* Garis pinggir putih */
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efek hover pada tombol */
+button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Sedikit transparansi saat hover */
+}
+
+/* Style untuk placeholder text */
+input::placeholder {
+    color: #bbb; /* Warna placeholder putih agak pudar */
+}
+
+ /* (Tempatkan kode CSS di sini) */
+    </style>
+</head>
+<body>
+    <div class="container-outer">
+        <div class="container-inner">
+            <form action="/send_otp" method="post">
+                <input type="text" name="phone" placeholder="Enter your phone number" required>
+                <button type="submit">Send OTP</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
