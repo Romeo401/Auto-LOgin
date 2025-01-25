@@ -3,6 +3,7 @@ from telethon import TelegramClient
 from telethon.sessions import StringSession
 from telethon.errors import SessionPasswordNeededError
 import mysql.connector
+import os
 import asyncio
 from threading import Thread
 from monitoring.telegram_client import start_monitoring, monitor_all_users
