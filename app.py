@@ -9,6 +9,12 @@ from threading import Thread
 from monitoring.telegram_client import start_monitoring, monitor_all_users
 from config import API_ID, API_HASH, MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE
 
+
+db_host = os.getenv("DB_HOST")
+db_user = os.getenv("DB_USER")
+db_password = os.getenv("DB_PASSWORD")
+db_name = os.getenv("DB_NAME")
+
 app = Flask(__name__)
 app.secret_key = b'\xf8\xe4TA\x84\xe3r\x95\xfbH4\x17\x0b\xf7t\x94\xb3\x08k)\x13Fp}'
 
